@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#eeb1d3" />
+    <title>Một món quà nhỏ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Great+Vibes&family=Playwrite+VN:wght@100..400&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23ef6392' d='M16 28S2 20 2 10a7 7 0 0 1 13-4 7 7 0 0 1 13 4c0 10-12 18-12 18Z'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="scene" aria-label="Món quà kỷ niệm">
+      <div class="ambient ambient-one"></div>
+      <div class="ambient ambient-two"></div>
+      <div class="sparkles" aria-hidden="true">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+
+      <canvas id="fireworks" aria-hidden="true"></canvas>
+      <div class="photos-layer" aria-live="polite"></div>
+      <div class="flower-overlay" aria-hidden="true"></div>
+      <h2 class="birthday-title" aria-live="polite" aria-label="Happy Birthday Yến Linh">
+        <span>Happy Birthday</span><strong>Yến Linh</strong>
+      </h2>
+
+      <div class="gift-box" aria-hidden="true">
+        <span class="box-shadow"></span>
+        <img class="box-body" src="assets/box-body.png" alt="" />
+        <img class="box-lid" src="assets/box-lid.png" alt="" />
+      </div>
+      <button class="gift-open-control" type="button" aria-label="Mở hộp quà">Mở</button>
+
+      <button class="envelope" type="button" aria-label="Mở lá thư">
+        <img src="assets/envelope.png" alt="Phong bì màu hồng có trái tim" />
+        <span>mở</span>
+      </button>
+
+      <section class="note-card" role="dialog" aria-modal="true" aria-labelledby="note-title" aria-hidden="true">
+        <button class="note-close" type="button" aria-label="Đóng lá thư">×</button>
+        <div class="note-heart" aria-hidden="true">♥</div>
+        <h1 id="note-title">Happy Birthday</h1>
+        <div class="note-content"></div>
+        <p class="note-signature"></p>
+      </section>
+
+      <button class="sound-toggle" type="button" aria-label="Bật nhạc nền" aria-pressed="false">
+        <span class="sound-icon" aria-hidden="true">♪</span><span class="sound-label">Nhạc</span>
+      </button>
+      <p class="status-message" role="status"></p>
+      <audio id="bg-music" loop preload="auto" autoplay></audio>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
