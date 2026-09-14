@@ -323,6 +323,8 @@ const dodgePositions = [
   { left: 82, bottom: 74 },
   { left: 18, bottom: 30 },
   { left: 83, bottom: 34 },
+  { left: 18, bottom: 30 },
+  { left: 83, bottom: 34 },
   { left: 50, bottom: 84 }
 ];
 let openAttempts = 0;
